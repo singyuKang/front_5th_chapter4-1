@@ -11,6 +11,7 @@ export default function Home() {
         <div className={['flex pt-[40px] flex-col'].join(' ').trim()}>
           <SectionContainer deviceClass={'w-full'} />
         </div>
+        <></>
       </Container>
     </Page>
   )
