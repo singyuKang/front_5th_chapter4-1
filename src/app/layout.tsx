@@ -41,7 +41,7 @@ export default function RootLayout({
               className={[
                 'w-[48px] h-[48px] bg-white rounded-full fixed z-30',
                 'flex justify-center items-center top-btn-box-shadow p-[12px]',
-                'bottom-[40px] right-[25px] md:right-[50px]', // 모바일: 25px, 데스크톱: 50px
+                'bottom-[40px] right-[25px] md:right-[50px]',
               ]
                 .join(' ')
                 .trim()}
