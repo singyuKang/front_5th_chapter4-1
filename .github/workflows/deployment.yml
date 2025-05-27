@@ -6,13 +6,12 @@ on:
       - main # 또는 master, 프로젝트의 기본 브랜치 이름에 맞게 조정
   workflow_dispatch:
 
-permissions:
-  id-token: write
-  contents: read
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
 
     steps:
       - name: Checkout repository
