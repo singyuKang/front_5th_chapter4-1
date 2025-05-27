@@ -1,0 +1,49 @@
+import { Meta, Subtitle, Title } from '@storybook/blocks'
+import * as ColoredBoxStories from './Color.stories'
+import colors from './ColorPalette'
+
+<Meta of={ColoredBoxStories} />
+
+<Title>Color</Title>
+<Subtitle>색상 스타일</Subtitle>
+
+색상 스타일은 css 클래스를 통해 사용할 수 있다.
+
+```react
+/** Example for using primary color */
+
+// 배경 색상: `bg-${color}`
+<span className="bg-primary">Primary Background Color</span>
+
+// 글자 색상: `text-${color}`
+<span className="text-primary">Primary Text Color</span>
+```
+
+색상 정보는 다음과 같다
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">이름</th>
+      <th scope="col">색상</th>
+      <th scope="col">글자 클래스</th>
+      <th>글자 예시</th>
+      <th scope="col">배경 클래스</th>
+      <th>배경 예시</th>
+    </tr>
+  </thead>
+  <tbody>
+    {Object.entries(colors).map(([name, value]) => (
+      <tr key={name}>
+        <td>
+          {name.slice(0, 1).toLocaleUpperCase() + name.slice(1, name.length)}
+        </td>
+        <td>{value}</td>
+        <td>text-{name}</td>
+        <td style={{ color: value, fontWeight: 700 }}>{name} text</td>
+        <td>bg-{name}</td>
+        <td style={{ backgroundColor: value }} />
+      </tr>
+    ))}
+  </tbody>
+</table>

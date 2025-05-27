@@ -1,0 +1,35 @@
+import { Canvas, Meta, Subtitle, Title } from "@storybook/blocks";
+import * as TextStories from "./Text.stories";
+
+<Meta of={TextStories} />
+
+<Title>Typography</Title>
+<Subtitle>글자 스타일</Subtitle>
+
+글자 스타일 적용은 `Text` 컴포넌트를 이용한다. 줄임표현 컴포넌트 및 css 클래스를 사용할 수 있다.
+
+```react
+/** Example for `headline1` */
+
+<Text variant="headline1">Headline1</Text>
+
+// 줄임 표현
+<Headline1>Headline1</Headline1>
+
+// CSS 클래스
+<span className="text-headline1">Headline1</span>
+```
+
+<Canvas of={TextStories.Headline1} />
+<Canvas of={TextStories.Headline2} />
+<Canvas of={TextStories.Headline3} />
+<Canvas of={TextStories.Subtitle1} />
+<Canvas of={TextStories.Subtitle2} />
+<Canvas of={TextStories.Subtitle3} />
+<Canvas of={TextStories.Subtitle4} />
+<Canvas of={TextStories.Subtitle5} />
+<Canvas of={TextStories.Body1} />
+<Canvas of={TextStories.Body2} />
+<Canvas of={TextStories.Caption1} />
+<Canvas of={TextStories.Caption2} />
+<Canvas of={TextStories.Caption3} />

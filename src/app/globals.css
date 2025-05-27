@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    min-height: 100%;
+    font-size: 12px;
+  }
+
+  svg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.top-btn-box-shadow {
+  box-shadow: 0 0 0 1px #dadcdf, 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+.top-btn-box-shadow:hover {
+  box-shadow: 0 0 0 1px #dadcdf, 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+  background-color: #f7f7f8;
+}
+
+.download-btn-grow {
+  flex-grow: 0;
+}
+
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+  .download-btn-grow {
+    flex-grow: 1;
+  }
+}
+
+@layer components {
+  .default-table {
+    @apply w-full border-t border-t-2 !border-t-black;
+  }
+
+  .default-table th,
+  .default-table td {
+    @apply border-collapse border border-gray6 border-solid;
+    @apply px-[12px] py-[12px];
+    @apply font-primary text-gray0;
+  }
+
+  .default-table thead th {
+    @apply text-center text-subtitle3 bg-gray7 border-t-0;
+  }
+
+  .default-table tbody th {
+    @apply text-center text-body2 bg-gray7 whitespace-nowrap;
+  }
+
+  .default-table tfoot th {
+    @apply text-center text-subtitle3 bg-gray7 whitespace-nowrap;
+  }
+
+  .default-table tbody td,
+  .default-table tfoot td {
+    @apply text-body2;
+  }
+
+  .default-table thead tr > th:first-child,
+  .default-table tbody tr > th:first-child,
+  .default-table tbody tr > td:first-child,
+  .default-table tfoot tr > th:first-child,
+  .default-table tfoot tr > td:first-child {
+    @apply !border-l-0;
+  }
+
+  .default-table thead tr > th:last-child,
+  .default-table tbody tr > td:last-child,
+  .default-table tfoot tr > td:last-child {
+    @apply !border-r-0;
+  }
+}
+
+.custom-table th,
+.custom-table td {
+  @apply border-collapse border border-gray6 border-solid;
+  @apply p-0 py-[12px];
+  @apply font-primary text-gray0;
+}
+
+.custom-table tbody td[rowspan='2'] {
+  @apply p-0 px-[12px] py-[12px];
+}
+
+.custom-table tbody td[rowspan='4'] {
+  @apply p-0 px-[20px] py-[12px];
+}
+
+.custom-table tbody td[rowspan='21'] {
+  @apply p-0 px-[20px] py-[12px];
+}

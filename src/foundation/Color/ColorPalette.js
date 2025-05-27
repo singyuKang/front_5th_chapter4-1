@@ -1,0 +1,23 @@
+/** @type {import('./Color').ColorPalette} */
+module.exports = {
+  primary: '#262626',
+  secondary: '#419BF9',
+  secondary3: '#a2cffc',
+  black: '#000000',
+  gray0: '#0b0b0b',
+  gray1: '#202020',
+  gray2: '#333333',
+  gray3: '#4f4f4f',
+  gray4: '#828282',
+  gray5: '#bdbdbd',
+  gray6: '#ededed',
+  gray7: '#f2f2f2',
+  gray8: '#f7f7f7',
+  white: '#ffffff',
+  red: '#ff3b30',
+  orange: '#ff8730',
+  yellow: '#ffef51',
+  green: '#00b050',
+  mintGreen: '#9FF8B8',
+  blue: '#1E90FF',
+}

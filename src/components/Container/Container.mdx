@@ -1,0 +1,19 @@
+import { Meta, Stories, Subtitle, Title } from '@storybook/blocks'
+import ContainerStories from './Container.stories'
+
+<Meta of={ContainerStories} />
+
+<Title>Container</Title>
+<Subtitle>컨테이너</Subtitle>
+
+컨테이너는 페이지의 기본 레이아웃을 잡을 때 사용하며, 가운데 배치되고 적절한 너비를 갖는 컴포넌트를 말한다.
+
+Header, Footer 같은 곳에선 `widest`를 사용한다. 데스크탑에서 1080px의 너비를 갖는다.
+
+텍스트가 많은 페이지에서 `wide`를 사용할 수 있다. 데스크탑에서 880px의 너비를 갖는다.
+
+기본 너비는 `default`를 사용할 수 있으며 678px의 너비를 갖는다.
+
+모바일에선 Variant 값이 무시되며, 꽉 채우되 좌우 패딩 값, 20px을 갖는다.
+
+<Stories />

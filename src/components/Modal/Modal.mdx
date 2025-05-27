@@ -1,0 +1,52 @@
+import { Meta, Stories, Subtitle, Title } from '@storybook/blocks'
+import * as ModalStories from './Modal.stories'
+
+<Meta of={ModalStories} />
+
+<Title>Modal</Title>
+<Subtitle>모달</Subtitle>
+
+### 프로바이더
+
+모달 사용은 페이지를 렌더하는 최상단을 `ModalProvider`으로 감싼다. `ModalProvider`는 모달의 상태와 모달을 표현할 영역 부분을 담당하는 컴포넌트이다.\
+`ModalProvider`에선 여러 개의 모달을 `key`값으로 관리한다.
+
+### 사용
+
+실제 사용은 `useModalContext`을 통하여 `Modal` 엘리먼트와 `open`, `close` 함수를 받아와 사용한다.
+
+### 작동
+
+#### 함수 정의
+
+`open`과 `close` 함수 정의는 다음과 같다.
+
+```typescript
+import {ReactElement} from "react";
+
+type OpenFunction = typeof ((key: string, element: ReactElement, option?: ModalOption) => {}) // open 함수 정의
+type CloseFunction = typeof ((key: string) => {}) // close 함수 정의
+```
+
+#### 예시
+
+```tsx
+import { ModalProps } from './Modal'
+import { useModalContext } from './ModalProvider'
+
+const WithActionChild = (props: ModalProps) => {
+  const { Modal, open, close } = useModalContext()
+  const id = 'modal-with-action'
+
+  return (
+    <Body1
+      as="a"
+      onClick={() => open(id, <Modal {...props} onClick={() => close(id)} />)}
+    >
+      Click to open modal
+    </Body1>
+  )
+}
+```
+
+<Stories></Stories>
