@@ -24,3 +24,22 @@
 
 
 ## CDN과 성능최적화
+
+| **Time to First Byte** | **Start Render** | **First Contentful Paint** | [**Speed Index**](https://docs.webpagetest.org/metrics/speedindex/) | [**Largest Contentful Paint**](https://www.webpagetest.org/vitals.php?test=250527_BiDcM6_44X&run=2&cached=0#lcp) | [**Cumulative Layout Shift**](https://www.webpagetest.org/vitals.php?test=250527_BiDcM6_44X&run=2&cached=0#cls) | [**Total Blocking Time**](https://www.webpagetest.org/vitals.php?test=250527_BiDcM6_44X&run=2&cached=0#tbt) | **Page Weight** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **3.385**S | **5.700**S | **6.499**S | **7.256**S | **10.302**S | **.582** | **5.379**S | **3,959**KB |
+| *When did the content start downloading?* | *When did pixels first start to appear?* | *How soon did text and images start to appear?* | *How soon did the page look usable?* | *When did the largest visible content finish loading?* | *How much did the design shift while loading?* | *Was the main thread blocked?* | *How many bytes downloaded?* |
+
+| **Time to First Byte** | **Start Render** | **First Contentful Paint** | [**Speed Index**](https://docs.webpagetest.org/metrics/speedindex/) | [**Largest Contentful Paint**](https://www.webpagetest.org/vitals.php?test=250527_BiDcQR_44Z&run=2&cached=0#lcp) | [**Cumulative Layout Shift**](https://www.webpagetest.org/vitals.php?test=250527_BiDcQR_44Z&run=2&cached=0#cls) | [**Total Blocking Time**](https://www.webpagetest.org/vitals.php?test=250527_BiDcQR_44Z&run=2&cached=0#tbt) | **Page Weight** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **.733**S | **2.600**S | **2.605**S | **3.920**S | **7.006**S | **.582** | **4.793**S | **3,047**KB |
+| *When did the content start downloading?* | *When did pixels first start to appear?* | *How soon did text and images start to appear?* | *How soon did the page look usable?* | *When did the largest visible content finish loading?* | *How much did the design shift while loading?* | *Was the main thread blocked?* | *How many bytes downloaded?* |
+
+
+
+![74](https://github.com/user-attachments/assets/5f6bb083-236b-4e89-a805-970d100ed3df)
+![스크린샷 2025-05-27 오후 1 51 34](https://github.com/user-attachments/assets/a1a036b2-e59c-45fc-a4fd-702c343558dc)
+
+<img width="965" alt="스크린샷 2025-05-28 오후 7 34 12" src="https://github.com/user-attachments/assets/e1e757e4-4fd2-49d8-9924-516fce1e003b" />
+
+<img width="924" alt="스크린샷 2025-05-28 오후 7 34 27" src="https://github.com/user-attachments/assets/6535310f-04f3-4ada-a6fd-783623591003" />
