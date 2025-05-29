@@ -15,7 +15,8 @@
 - CloudFrount 배포 도메인 이름 : https://donf7c57g46t3.cloudfront.net/
 
 ## 배포 프로세스 구조
-![ci_cd drawio](https://github.com/user-attachments/assets/7e2b86b3-2fe6-45f0-93f7-e0dd271dc45b)
+![ci_cd drawio](https://github.com/user-attachments/assets/fa79e4f6-ad40-424b-a1f4-b490d435ebb4)
+
 
 
 
