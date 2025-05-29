@@ -58,10 +58,28 @@
 | *When did the content start downloading?* | *When did pixels first start to appear?* | *How soon did text and images start to appear?* | *How soon did the page look usable?* | *When did the largest visible content finish loading?* | *How much did the design shift while loading?* | *Was the main thread blocked?* | *How many bytes downloaded?* |
 
 
-
 ![74](https://github.com/user-attachments/assets/5f6bb083-236b-4e89-a805-970d100ed3df)
 ![스크린샷 2025-05-27 오후 1 51 34](https://github.com/user-attachments/assets/a1a036b2-e59c-45fc-a4fd-702c343558dc)
 
 <img width="965" alt="스크린샷 2025-05-28 오후 7 34 12" src="https://github.com/user-attachments/assets/e1e757e4-4fd2-49d8-9924-516fce1e003b" />
 
 <img width="924" alt="스크린샷 2025-05-28 오후 7 34 27" src="https://github.com/user-attachments/assets/6535310f-04f3-4ada-a6fd-783623591003" />
+
+### 📊 성능 지표 비교
+| 항목                                 | S3 배포   | CloudFront 배포 | 개선 (절대값)  | 개선률 (%)      |
+| ---------------------------------- | ------- | ------------- | --------- | ------------ |
+| **Time to First Byte (TTFB)**      | 3.385s  | 0.733s        | ⬇️ 2.652s | **78.3% 개선** |
+| **Start Render**                   | 5.700s  | 2.600s        | ⬇️ 3.100s | **54.4% 개선** |
+| **First Contentful Paint (FCP)**   | 6.499s  | 2.605s        | ⬇️ 3.894s | **59.9% 개선** |
+| **Speed Index**                    | 7.256s  | 3.920s        | ⬇️ 3.336s | **46.0% 개선** |
+| **Largest Contentful Paint (LCP)** | 10.302s | 7.006s        | ⬇️ 3.296s | **32.0% 개선** |
+| **Cumulative Layout Shift (CLS)**  | 0.582   | 0.582         | ➖ 0.000   | 0.0% (동일)    |
+| **Total Blocking Time (TBT)**      | 5.379s  | 4.793s        | ⬇️ 0.586s | **10.9% 개선** |
+| **Page Weight**                    | 3,959KB | 3,047KB       | ⬇️ 912KB  | **23.0% 감소** |
+
+
+
+
+
+
+
