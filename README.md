@@ -10,10 +10,15 @@
 5. 빌드된 파일을 S3 버킷에 동기화
 6. CloudFront 캐시 무효화
 
-
 ## 주요 링크
 - S3 버킷 웹사이트 엔드포인트 : http://front-5th-chapter4-1-singyukang.s3-website.ap-northeast-2.amazonaws.com/
 - CloudFrount 배포 도메인 이름 : https://donf7c57g46t3.cloudfront.net/
+
+## 배포 프로세스 구조
+![ci_cd drawio](https://github.com/user-attachments/assets/7e2b86b3-2fe6-45f0-93f7-e0dd271dc45b)
+
+
+
 
 ## 주요 개념
 - GitHub Actions과 CI/CD 도구: 
